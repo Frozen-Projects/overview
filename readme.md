@@ -1,3 +1,13 @@
+# No-Code Maintenance Training Editor
+I developed a no-code editor to allow factory maintenance supervisors to create their maintenance training simulations without coding or scripting knowledge. 
+
+## Workflow 
+1. Import 3D Models 
+2. Describe scenario by writing 
+3. Make necessary movement for once 
+
+(Video can be shared privately)
+
 # UE5 OpenCASCADE Wrapper (CAD Importer)
 Factories are always changing and improving for various reasons such as increasing observability or replacing hard-to-find parts with alternatives at maintenance operations. Most of the time, these changes include company-specific know-hows. So, companies don't want to share their 3D models after some level. 
 For this reason, runtime import solutions are the most important feature of 3D digital twin training simulation editors. 
@@ -51,7 +61,7 @@ I developed open62541 based OPC UA client plugin for Unreal Engine 5 to access i
 - 3D HMI
 - Remote Manufacturing
 - Predictive maintenance related digital twins
-- OT to IT Bridges such as OPC UA to HTTP, MQTT and Databases
+- OT to IT Bridges such as OPC UA to HTTP, MQTT and Databases like ProSYS DataForge and PTC Kepware DataLogger.
 
 ## VIDEOS 
 - OPC UA to REST API : https://www.linkedin.com/posts/eryozr_ue-ue5-unreal-activity-7134909446283046913-Hyp0/
@@ -59,3 +69,32 @@ I developed open62541 based OPC UA client plugin for Unreal Engine 5 to access i
 - Android Client Sample : https://www.linkedin.com/feed/update/urn:li:activity:7017586141168082944/
 - MBedTLS Certificate Generator : https://www.linkedin.com/feed/update/urn:li:activity:7292000353326174208/
 
+# UE5 Modbus Client
+I developed libmodbus based modbus client plugin for Unreal Engine 5 to access legacy industrial machine data in real time.
+
+## Videos
+https://www.linkedin.com/feed/update/urn:li:activity:7226946032792698880/
+
+# General Database Connector
+I integrated ``Microsoft ODBC``, ``OLEDB``, ``mongocxx``, ``libpqxx``, ``sqlite`` libraries to access various databases from Unreal Engine 5 at runtime.
+
+## Mongocxx Specific Features
+- All crud operations (insert, update, delete, replace and their find... variants)
+- Get all or specific data
+- Aggregation System
+- Monitoring System
+- Transactions
+
+## Others
+- To solve ``forward cursor only`` problem of SQL clients, I hold data at cache. So, users can process specific sections of data at different times without re-execution.
+
+# MQTT Clients
+Eclipse Paho C based MQTT client libraries.
+- Sync: https://github.com/Frozen-Projects/FF_MQTT_Sync
+- Async: https://github.com/Frozen-Projects/FF_MQTT_Async
+
+# LibHV Based HTTP Server Library
+Digital twins projects are not just fancy visualizing tools for industrial data. Sometimes we may want to feed other MES (manufacturing execution systems) products with our processed data. In these cases, HTTP servers can help us. Current HTTP server solutions of UE5 are blocking types or use main thread. So, they can't satisfy performance requirements when there are too much API requests. To solve that, I integrated ``LibHv`` library to UE5.
+
+## Github
+https://github.com/Frozen-Projects/FF_HTTP_LHV
