@@ -11,6 +11,15 @@ I developed a no-code editor to allow factory maintenance supervisors to create 
 
 (Video can be shared privately)
 
+# LLAMA.CPP Plugin
+This plugin allows digital twins to harvest power of LLMs at local.
+
+### Roadmap
+- Conversation history
+- Import and export chat history
+- RAG implementation
+- Visual Processing
+
 # UE5 OpenCASCADE Wrapper (CAD Importer)
 Factories are always changing and improving for various reasons such as increasing observability or replacing hard-to-find parts with alternatives at maintenance operations. Most of the time, these changes include company-specific know-hows. So, companies don't want to share their 3D models after some level. 
 For this reason, runtime import solutions are the most important feature of 3D digital twin training simulation editors. 
@@ -155,3 +164,4 @@ https://github.com/Frozen-Projects/WindowSystem
 https://www.linkedin.com/feed/update/urn:li:activity:7274327445254602753
 
 # Runtime Logger
+It catches all ``UE_LOG`` based logs and exposes it to blueprint interface for more advance processing and visualization.
